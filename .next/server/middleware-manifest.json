@@ -1,0 +1,29 @@
+{
+  "sortedMiddleware": [
+    "/decode",
+    "/encode"
+  ],
+  "middleware": {
+    "/encode": {
+      "env": [],
+      "files": [
+        "static/chunks/webpack.js",
+        "server/pages/encode/_middleware.js"
+      ],
+      "name": "pages/encode/_middleware",
+      "page": "/encode",
+      "regexp": "^/encode(?:(/.*)?)$"
+    },
+    "/decode": {
+      "env": [],
+      "files": [
+        "static/chunks/webpack.js",
+        "server/pages/decode/_middleware.js"
+      ],
+      "name": "pages/decode/_middleware",
+      "page": "/decode",
+      "regexp": "^/decode(?:(/.*)?)$"
+    }
+  },
+  "version": 1
+}
